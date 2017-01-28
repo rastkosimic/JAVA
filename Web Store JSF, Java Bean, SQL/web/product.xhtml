@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Products</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:outputLabel value="Enter product id"></h:outputLabel><br></br>
+            <h:inputText value="#{ProductBean.id}"></h:inputText><br></br>
+            <h:outputLabel value="Enter a product"></h:outputLabel><br></br>
+            <h:inputText value="#{ProductBean.product}"></h:inputText><br></br>
+            <h:outputLabel value="Enter a price"></h:outputLabel><br></br>
+            <h:inputText value="#{ProductBean.price}"></h:inputText><br></br>
+            <h:commandButton value="Add product" action="${ProductBean.insertProduct()}"></h:commandButton>
+            <h:commandButton value="Update product" action="${ProductBean.updateProduct()}"></h:commandButton>
+            <h:commandButton value="Delete product" action="${ProductBean.deleteProduct()}"></h:commandButton>
+            <h:commandButton value="Back customers" action="customer"></h:commandButton>
+            <h:commandButton value="Go to check out" action="purchase"></h:commandButton>
+        </h:form>
+        <label for="product_list" id="product_list_label">All products:</label><br/>
+        <textarea id="product_list" rows="6" cols="50" readonly=''>${ProductBean.allProducts()}</textarea><br></br>
+        <h:outputLabel value="* to insert new product, enter product name and price in the text boxes"></h:outputLabel><br></br>
+        <h:outputLabel value="* to update the product, fill all text boxes"></h:outputLabel><br></br>
+        <h:outputLabel value="* to delete the product, enter product's ID only"></h:outputLabel><br></br>
+    </h:body>
+</html>
+

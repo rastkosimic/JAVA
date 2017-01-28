@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Purchase</title>
+    </h:head>
+    <h:body>
+        <div class="to the left" style="float: left;">
+            <label for="customer_list" id="customer_list_label">All customers:</label><br/>
+            <textarea id="customer_list" rows="6" cols="92" readonly=''>${CustomerBean.allCustomers()}</textarea><br></br>
+        </div>
+        <div class="to the right" style="float: right;">
+            <label for="product_list" id="product_list_label">All products:</label><br/>
+            <textarea id="product_list" rows="6" cols="92" readonly=''>${ProductBean.allProducts()}</textarea><br/>
+        </div>
+        <div class="to the right" style="float: left;">
+            <h:form>
+                <h:outputLabel value="Enter product id"></h:outputLabel><br></br>
+                <h:inputText value="#{PurchaseBean.productId}"></h:inputText><br></br>
+                <h:outputLabel value="Enter a customer id"></h:outputLabel><br></br>
+                <h:inputText value="#{PurchaseBean.customerId}"></h:inputText><br></br>
+                <h:commandButton value="Make a purchase" action="${PurchaseBean.purchase()}"></h:commandButton>
+            </h:form>
+        </div>
+        <div class="to the right" style="margin-left: 200px">
+            <label for="purchase_list" id="putchase_list_label">All purchases:</label><br/>
+            <textarea id="purchase_list" rows="6" cols="80" readonly=''>${PurchaseBean.allPurchase()}</textarea>
+        </div>
+        <br></br>
+        <h:form>
+            <h:outputLabel value="To delete a purchase, enter the purchase ID:"></h:outputLabel><br></br>
+            <h:inputText value="#{PurchaseBean.purchaseId}"></h:inputText><br></br>
+            <h:commandButton value="Delete a purchase" action="${PurchaseBean.deletePrchase()}"></h:commandButton>
+            <h:commandButton value="Back to customers" action="customer"></h:commandButton>
+            <h:commandButton value="Back to products" action="product"></h:commandButton>
+        </h:form> 
+    </h:body>
+</html>
+

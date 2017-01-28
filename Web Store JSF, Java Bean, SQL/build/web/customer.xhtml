@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Customers</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:outputLabel value="Enter customer's id"></h:outputLabel><br></br>
+            <h:inputText value="#{CustomerBean.id}"></h:inputText><br></br>
+            <h:outputLabel value="Enter customer's name"></h:outputLabel><br></br>
+            <h:inputText value="#{CustomerBean.name}"></h:inputText><br></br>
+            <h:outputLabel value="Enter customer's surname"></h:outputLabel><br></br>
+            <h:inputText value="#{CustomerBean.surname}"></h:inputText><br></br>
+            <h:outputLabel value="Enter customer's address"></h:outputLabel><br></br>
+            <h:inputText value="#{CustomerBean.address}"></h:inputText><br></br>
+            <h:commandButton value="Add customer" action="${CustomerBean.insertCustomer()}"></h:commandButton>
+            <h:commandButton value="Update customer" action="${CustomerBean.updeteCustomer()}"></h:commandButton>
+            <h:commandButton value="Delete customer" action="${CustomerBean.deleteCustomer()}"></h:commandButton>
+            <h:commandButton value="Go to products" action="product"></h:commandButton>
+            <h:commandButton value="Go to check out" action="purchase"></h:commandButton>
+        </h:form>
+        <label for="customer_list" id="customer_list_label">All customers:</label><br/>
+        <textarea id="customer_list" rows="6" cols="80" readonly=''>${CustomerBean.allCustomers()}</textarea><br></br>
+        <h:outputLabel value="* to insert new customer, enter customer name, surname and address in the text boxes"></h:outputLabel><br></br>
+        <h:outputLabel value="* to update the customer, fill all text boxes"></h:outputLabel><br></br>
+        <h:outputLabel value="* to delete the customer, enter customer's ID only"></h:outputLabel><br></br>
+    </h:body>
+</html>
+
