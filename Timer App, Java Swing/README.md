@@ -1,0 +1,3 @@
+# Timer App, Java Swing
+
+This app uses bunch of advanced Java Swing classes. You can choose a colour, set the starting time of the another window that will be changing its background colour between the colour you picked and its default white background. You can also set the rate of change of those backgrounds by using the JSpinner component. Once you run the app, there is a robot like icon in the system tray of your OS. Right clicking on it you will be prompted to choose between Settings and Close options. Clicking on Settings, new window will appear and you will be able to set previously mentioned things. You can only close this app by clicking on Close from the system tray icon. No other option can terminate the app.
