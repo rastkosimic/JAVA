@@ -1,0 +1,3 @@
+# Company Management, Persistence
+
+This application for employee management uses Hibernate Object Relational Mapping ORM to store the objects and their current state in an MySQL database. It uses all of CRUD operations. You can add, delete, change and show employees as well as show employees based on salary they earn. You must enter your login credentials in 130th line of Employee.java file. You will not be able to connect to your server with the database otherwise. The database SQL file is "Company SQL" file.
