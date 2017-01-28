@@ -1,0 +1,3 @@
+# Client-Server, TCP connection
+
+This example contains two java classes, Server and Calculator. Calculator class is a client side of this simple application and it has text fields for the user input as well as button Add for adding the two entered numbers and button Reset. Server class implements Runnable class and contains entire logic for input processing and displaying the outcome. TCP connection is used for interclass communication.
