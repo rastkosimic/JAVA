@@ -1,0 +1,3 @@
+# Bookstore, JAXP
+
+Purpose of this simple example is to show the use of Java API for XML Processing - JAXP. The book database is nothing but one xml file with bunch of books in it. There are two conditions for book selection: price must be greater than 10 and publishing year must be greater than 2005. XPath selection technique was used to pick appropriate books. Selected books are displayed in a console of your IDE.
