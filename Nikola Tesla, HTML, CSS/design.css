@@ -1,0 +1,74 @@
+a, a:link{
+	color:rgb(255, 255, 102);
+	text-decoration:none;
+}
+
+a:visited{
+	color:rgb(255, 255, 102);
+	text-decoration:none;
+}
+
+a:hover{
+	color:#555;
+	text-decoration:underline;
+}
+
+#header{
+	background:rgb(213, 213, 195);
+	font-size:20px;
+}
+
+td{
+	padding:7px 100px 10px 180px;
+}
+
+p{
+	color:rgb(0,0,0);
+	text-align: justify;
+	text-indent: 30px;
+}
+
+#aviator{
+	float:right;
+	width:250px;
+	margin-left:10px;
+}
+
+#tesla-and-pigeon{
+	float:right;
+	width:200px;
+	margin-left:10px;
+}
+
+#time-magazine{
+	float:right;
+	width:200px;
+	margin-left:10px;
+	margin-bottom:10px;
+}
+
+#oatmeal{
+	color:black;
+}
+
+body{
+	background-image: url("images/paper.png");
+	background-repeat: repeat;
+	background-color:#ff9900;
+	
+}
+
+#body{
+	font-family: monospace;
+}
+
+#wrapper {
+	width:400px;
+}
+
+#info{
+	text-align: center;
+	font-weight: bold;
+	clear: both;
+	
+}
