@@ -1,0 +1,3 @@
+# Internet Package Selling, JavaFX, MVC, fxml, css
+
+This stand alone application is based upon Model-View-Controller (MVC) pattern. JavaFX is used to develop the GUI which was further decorated by the use of css. In this application you are able to make an internet package selling. You enter customer's personal details and internet package details. They are then stored in the MySQL database. "internet package database SQL" file is .sql file for database creation. You must enter your sign in credentials in DBConnection.java file in order to be able to communicate with your server where the database had been previously stored.

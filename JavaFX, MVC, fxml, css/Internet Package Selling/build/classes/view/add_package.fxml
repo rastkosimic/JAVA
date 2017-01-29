@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<GridPane hgap="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" vgap="3.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InternetPackageController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="174.0" minWidth="10.0" prefWidth="133.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="238.0" minWidth="10.0" prefWidth="97.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="470.0" minWidth="10.0" prefWidth="470.0" />
+      <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <HBox alignment="TOP_RIGHT" spacing="5" GridPane.columnIndex="2" GridPane.rowIndex="0">
+            <children>
+                <Button fx:id="closeBtn" onAction="#closeForm" prefHeight="25.0" prefWidth="25.0" />
+            </children>
+        </HBox>
+        <Label alignment="CENTER" prefHeight="27.0" prefWidth="305.0" text="Internet Package Management" GridPane.columnSpan="3" GridPane.halignment="CENTER">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label text="Internet speed [Mbit]:" GridPane.rowIndex="1" />
+        <Label text="Internet capacity [GB]:" GridPane.rowIndex="2" />
+        <Label text="Contract Length [Yrs]:" GridPane.rowIndex="3" />
+        <Label text="Name:" GridPane.rowIndex="4" />
+        <Label text="Surname:" GridPane.rowIndex="5" />
+        <Label text="Address:" GridPane.rowIndex="6" />
+        <Button fx:id="saveBtn" mnemonicParsing="false" onAction="#savePackage" prefHeight="25.0" prefWidth="75.0" text="Save" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.rowSpan="2">
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding></Button>
+        <Label text="To remove the Customer, enter it's ID:" GridPane.columnSpan="2" GridPane.rowIndex="9" />
+        <Label text="Customer's ID:" GridPane.rowIndex="10" />
+        <Button fx:id="removeBtn" mnemonicParsing="false" onAction="#removePackage" prefHeight="25.0" prefWidth="75.0" text="Remove" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.rowSpan="2">
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding></Button>
+        <TextField fx:id="idFld" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
+         <GridPane.margin>
+            <Insets left="15.0" right="15.0" />
+         </GridPane.margin></TextField>
+        <ChoiceBox fx:id="speedBox" prefHeight="25.0" prefWidth="80.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+        <ChoiceBox fx:id="capacityBox" prefHeight="25.0" prefWidth="80.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+        <ChoiceBox fx:id="contractBox" prefHeight="25.0" prefWidth="80.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+        <TextField fx:id="nameFld" prefHeight="25.0" prefWidth="65.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin></TextField>
+        <TextField fx:id="surnameFld" prefHeight="25.0" prefWidth="65.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <TextField fx:id="addressFld" prefHeight="25.0" prefWidth="65.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.rowSpan="11">
+            <columns>
+                <TableColumn fx:id="idCol" prefWidth="41.0" text="ID" />
+                <TableColumn fx:id="nameCol" prefWidth="65.0" text="Name" />
+                <TableColumn fx:id="surnameCol" prefWidth="70.0" text="Surname" />
+                <TableColumn fx:id="addressCol" prefWidth="65.0" text="Address" />
+                <TableColumn fx:id="speedCol" prefWidth="55.0" text="Speed" />
+                <TableColumn fx:id="capacityCol" prefWidth="55.0" text="Capacity" />
+                <TableColumn fx:id="contractCol" prefWidth="103.0" text="Contract Length" />
+            </columns>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </TableView>
+    </children>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+    <padding>
+        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+    </padding>
+</GridPane>

@@ -1,0 +1,68 @@
+.root{
+    -fx-background-color: #373435;
+}
+
+.label{
+    -fx-text-fill: white;
+}
+
+.text-field{
+    -fx-background-color: transparent;
+    -fx-border-color: #FFFFFF;
+    -fx-text-fill: white;
+}
+
+.text-field:hover, .text-field:focused{
+    -fx-border-color: #75606F;
+}
+
+#speedBox, #capacityBox, #contractBox{
+    -fx-background-color: transparent;
+    -fx-border-color: #FFFFFF;
+    -fx-text-fill: white;
+}
+
+#speedBox .context-menu, #capacityBox .context-menu, #contractBox .context-menu{
+    -fx-background-color: transparent;
+    -fx-border-color: #FFFFFF;
+}
+
+#speedBox:hover, #speedBox:focused, #capacityBox:hover, #capacityBox:focused, #contractBox:hover, #contractBox:focused{
+    -fx-border-color: #75606F;
+}
+/*#idCol, #nameCol, #surnameCol, #addressCol, #speedCol, #capacityCol, #contractCol{
+    -fx-background-color: #004C00;
+    -fx-border-color: #FFFFFF;
+    -fx-text-fill: white;
+}*/
+
+.table-column{
+    -fx-background-color: #004C00;
+    -fx-border-color: #FFFFFF;
+    -fx-text-fill: white;
+}
+
+#saveBtn, #removeBtn {
+    -fx-background-color: transparent;
+    -fx-border-color: #FFFFFF;
+    -fx-text-fill: white;
+}
+
+#closeBtn{
+    -fx-graphic: url('close.png');
+    -fx-background-color: transparent;
+    -fx-border-width: 0.0;
+}
+
+#closeBtn:hover{
+    -fx-graphic: url('close_pic_hover.png');
+}
+
+#saveBtn:hover, #removeBtn:hover{
+    -fx-border-color: #75606F;
+}
+
+#saveBtn:pressed, #removeBtn:pressed{
+    -fx-border-color: #75606F;
+    -fx-background-color: #75606F;
+}
