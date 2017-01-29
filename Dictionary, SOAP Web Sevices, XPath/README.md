@@ -1,0 +1,4 @@
+# Dictionary, SOAP Web Services, XPath
+
+This example demonstrates web services based on SOAP protocol. This example has two sides: client and server. This dictionary application translates from Serbian to English and vice versa. Dictionary word database is just an xml file with four words: mother, father, brother and sister and their counterparts in Serbian language majka, otac, brat i sestra. There is only one web method that has three parameters: desired word, language from you are translating it, language to which you are translating it. You must enter parameters in stated order (Main.java file, line 19), otherwise exception will be thrown. XPath searching technique is used to give the appropriate result. Folder DictionaryClient contains client side files whereas folder Example contains server side files.
+

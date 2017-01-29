@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="dictionary">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="sr-en" maxOccurs="unbounded" />
+                <xs:element ref="en-sr" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="sr-en">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="majka" type="xs:string" />
+                <xs:element name="otac" type="xs:string" />
+                <xs:element name="brat" type="xs:string" />
+                <xs:element name="sestra" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="en-sr">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="mother" type="xs:string" />
+                <xs:element name="father" type="xs:string" />
+                <xs:element name="brother" type="xs:string" />
+                <xs:element name="sister" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

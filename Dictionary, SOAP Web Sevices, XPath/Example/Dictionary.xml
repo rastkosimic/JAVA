@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+    <sr-en>
+        <majka>mother</majka>       
+        <otac>father</otac>
+        <brat>brother</brat>
+        <sestra>sister</sestra>
+    </sr-en>
+    <en-sr>
+        <mother>majka</mother>
+        <father>otac</father>
+        <brother>brat</brother>
+        <sister>sestra</sister>
+    </en-sr>    
+</dictionary>

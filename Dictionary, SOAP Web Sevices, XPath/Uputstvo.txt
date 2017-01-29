@@ -1,0 +1,24 @@
+Ovaj zadatak sastoji se od serverskog i klijentskog dela. Postoji samo jedna web metoda koja sadrzi tri parametra:
+zeljena rec, jezik sa koga se prevodi, jezik na koji se prevodi. XML dokument predstavlja malu bazu reci.
+Jezici su srpski i engleski, ali web servis prepoznaje samo ako se upisu serbian i english. U suprotnom dolazi do 
+emitovanja izuzetka. Baza sadrzi reci: 
+- majka
+- otac
+- brat
+- sestra
+
+i njihove prevode na engleski:
+
+- moher
+- father
+- brother
+- sister
+
+Obe varijante mogu da se ukucaju u metodi i da se vidi prevod ukoliko se dalje navedu jezici pravilnim redosledom, npr:
+"otac", "serbian", "english".
+Ukoliko se navede npr:
+"otac", "english", "serbian" doci ce do izuzetka.
+
+Ukoliko pokrecete servis sa klijentskog dela, klijentski deo aplikacije je maksimalno uproscen. Treba upisati direktno u 
+System.out.println(translator.translate("father", "english", "serbian")); metodu zeljene reci i servis ce vratiti prevod
+ili izuzetak ispisan u konzoli.
